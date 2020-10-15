@@ -1,6 +1,6 @@
 # lab-13-user-adventure
 
-#Main page
+#Main page------------------------------------
 - HTML form inputs for name and class
     - what for? to personalize the quest
     -store in local storage 
@@ -11,7 +11,9 @@
 1)Store in local storage on submit (and log local storage)
 1)Do step 3+ redirect to the map page on submit
 
-#Map
+
+
+#Map-------------------------------------------
 -Hard coded HTML: <\ul> that can hold a bunch of links 
 -Generate HTML: loop over the quests, and make a link for each one
 -If the quest is already completed, make a non-link div instead.
@@ -24,7 +26,10 @@
                     - ToDo: disable completed quests, redirect on game end
 
 
-#Quest page
+
+
+
+#Quest page----------------------------------
 -Hard coded HTML not much. Maybe lots of empty divs? Maybe we generate those through?
 
 OUtcomes:
@@ -40,5 +45,5 @@ OUtcomes:
     1)Disable the completed quests
 
 
-#Results 
+#Results ----------------------------------------
 -USe state to display a different message depending on the final user state (HP/sanity/items/conversion)

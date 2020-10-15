@@ -13,24 +13,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+            <form action="">
+                <label for="">
+                    Can you remember your name friend?
+                    <input name='name' />
+                </label>
+                <label for="">
+                    <section name='character'>
+                        Teacher
+                        <input type="radio" name="character" value="teacher" />
+                        <img src="">
+                        Prodigal Son
+                        <input type="radio" name="character" value="prodigal-son" />
+                        <img src="">
+                        Dominatrix
+                        <input type="radio" name="character" value="dominatrix" />
+                        <img src="">
 
+                    </section>
+                </label>
+                <button>Ready?</button>
+            </form>
 
 
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="app.js"></script>
