@@ -1,5 +1,6 @@
 import quests from '../data.js';
 
+
 const ul = document.querySelector('ul');
 
 quests.forEach(quest => {

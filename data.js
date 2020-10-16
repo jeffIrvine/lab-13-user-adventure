@@ -19,8 +19,8 @@ export default [
             turkey dinners from the village pub. They give you 35 gold for meals
             that will never be delivered. I hope you can live with yourself. 
         `,
-            hp: 0,
-            gold: 35
+            sanity: 0,
+            eucharist: 35
         }, {
             id: 'fight',
             description: 'Fiiiiiggghhhttt!',
@@ -30,8 +30,8 @@ export default [
             your vanquished foes. The bad news is you take 30 hp damage. The good news is you
             find 50 gold.
         `,
-            hp: -30,
-            gold: 50
+            sanity: -30,
+            eucharist: 50
         }, {
             id: 'run',
             description: 'Run away like good Sir Robin',
@@ -39,8 +39,8 @@ export default [
             As you make a dash for the door a giant spider descends and take a bite of flesh,
             causing 50 hp damage.
         `,
-            hp: -50,
-            gold: 0
+            sanity: -50,
+            eucharist: 0
         }]
     },
     {
@@ -68,8 +68,8 @@ export default [
             Unluckily, you trip over a discarded wagon wheel on your
             way out of town and take 40 hp damage. 
         `,
-            hp: -35,
-            gold: 35
+            sanity: -35,
+            eucharist: 35
         }, {
             id: 'fight',
             description: 'Fiiiiiggghhhttt!',
@@ -79,8 +79,8 @@ export default [
             village has been completely burned to the ground.
             Oh, and you take 45 hp damage.
         `,
-            hp: -45,
-            gold: 0
+            sanity: -45,
+            eucharist: 0
         }, {
             id: 'archer',
             description: 'Emulate that guy from LOR who shot an arrow',
@@ -93,8 +93,8 @@ export default [
             killing the dragon instantly. The villagers declare you their hero
             and award you 90 gold.
         `,
-            hp: 0,
-            gold: 90
+            sanity: 0,
+            eucharist: 90
         }]
     },
     {
@@ -119,20 +119,20 @@ export default [
             id: 'wooden',
             description: 'A Wooden Chest',
             result: 'You grab 40 gold pieces!',
-            hp: 0,
-            gold: 40
+            sanity: 0,
+            eucharist: 40
         }, {
             id: 'golden',
             description: 'A Golden Chest',
             result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
-            hp: -50,
-            gold: 0
+            sanity: -50,
+            eucharist: 0
         }, {
             id: 'jeweled',
             description: 'A Jeweled Chest',
             result: 'A warm light engulfs you and you gain 35 hp',
-            hp: 35,
-            gold: 0
+            sanity: 35,
+            eucharist: 0
         }]
     }
 ];

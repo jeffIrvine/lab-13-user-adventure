@@ -1,5 +1,6 @@
 import quests from '../data.js';
-import { findById } from '../utils.js';
+import { findById, hasCompletedAllQuests } from '../utils.js';
+import { getUser, saveUser } from '../local-storage-utils.js';
 
 const section = document.querySelector('section');
 
@@ -38,5 +39,31 @@ quest.choices.forEach(choice => {
 const button = document.createElement('button');
 
 button.textContent = 'Are you sure?';
+
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const checked = document.querySelector(':checked');
+
+    const userChecked = checked.value;
+
+    const choice = findById(quest.choices, userChecked);
+    
+    // console.log(choice);
+    const user = getUser();
+    
+    user.sanity += choice.sanity;
+    user.eucharist += choice.eucharist;
+    
+    user.completed[id] = true;
+
+    saveUser(user);
+
+    if (user.sanity <= 1 || hasCompletedAllQuests(quests, user)) { 
+        window.location.href = '../results/';
+    }
+});
 
 form.appendChild(button);

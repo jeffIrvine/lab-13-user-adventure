@@ -38,7 +38,7 @@ Outcomes:
 1)Render a bunch of the 'quest stuff' to the DOM
     -note that the choices will need a loop
     -we'll need an event listener on the button that figures out which option the user selected (log that out)
-    -in the event listener, use the data to manipulate state(change HP/sanity/meeter/items comeplete quest etc)
+    -in the event listener, use the data to manipulate state(change HP/sanity/meeter/items complete quest etc)
 
     go back to map page and finish ToDos
     1)Figure out end game state and redirect
