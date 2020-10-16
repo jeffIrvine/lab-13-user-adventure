@@ -32,7 +32,7 @@
 #Quest page----------------------------------
 -Hard coded HTML not much. Maybe lots of empty divs? Maybe we generate those through?
 
-OUtcomes:
+Outcomes:
 1)Get the search params and log them out
 1)Use the search params to grab the correct quest (log it out)
 1)Render a bunch of the 'quest stuff' to the DOM

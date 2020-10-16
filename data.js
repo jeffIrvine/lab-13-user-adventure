@@ -1,7 +1,7 @@
 export default [
     {
         id: 'monsters',
-        title: 'A Den of Monsters',
+        title: 'Investigate the dim red glow coming from the forest.',
         map: {
             top: '89%',
             left: '44%'
@@ -45,7 +45,7 @@ export default [
     },
     {
         id: 'dragon',
-        title: 'A Scary Dragon',
+        title: 'Go back to the church.',
         map: {
             top: '17%',
             left: '37%'
@@ -99,7 +99,7 @@ export default [
     },
     {
         id: 'treasure',
-        title: 'A Golden Treasure',
+        title: 'Knock on the door of the warmly lit home.',
         map: {
             top: '31%',
             left: '5%'
