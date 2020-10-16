@@ -15,4 +15,28 @@ h2.textContent = quest.title;
 
 section.appendChild(h2);
 
-console.log(quest.choices);
+const form = document.createElement('form');
+
+section.appendChild(form);
+
+quest.choices.forEach(choice => {
+    const label = document.createElement('label');
+    const span = document.createElement('span');
+
+    span.textContent = choice.description;
+
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.value = choice.id;
+    radio.name = 'choices';
+
+    label.append(span, radio);
+
+    form.appendChild(label);
+});
+
+const button = document.createElement('button');
+
+button.textContent = 'Are you sure?';
+
+form.appendChild(button);
